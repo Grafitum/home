@@ -1,13 +1,14 @@
 body {
-  background-color: rgb(5, 125, 231);
+  background-color: #ffffff; /* Fundo branco */
+  margin: 0; /* Remove margens padrão */
 }
 
 nav {
-  border: 3px solid #393939; /* Borda escura */
-  background-color: #676767;
+  border: 3px solid #0056b3; /* Borda azul escura */
+  background-color: #007BFF; /* Azul mais claro */
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 5px; /* Diminui o espaçamento interno do nav */
+  padding: 10px; /* Aumenta o espaçamento interno do nav */
   height: auto; /* Permite que a altura se ajuste ao conteúdo */
 }
 
@@ -26,21 +27,21 @@ li {
 }
 
 li:hover {
-  color: blue;
+  color: #e7f1ff; /* Azul claro ao passar o mouse */
 }
 
 .nav2 {
   color: white;
-  font-size: medium; /* Mantenha o tamanho da fonte em um nível razoável */
-  border: 3px solid #676767; /* Borda azul escura */
-  background-color: #676767;
+  font-size: medium; /* Tamanho da fonte em um nível razoável */
+  border: 3px solid #0056b3; /* Borda azul escura */
+  background-color: #007BFF; /* Azul claro */
   display: flex; /* Para alinhar a logo e o texto */
   align-items: center; /* Alinha verticalmente os itens */
-  padding: 5px; /* Ajusta o espaçamento interno da nav2 */
+  padding: 10px; /* Ajusta o espaçamento interno da nav2 */
 }
 
 .nav2 img {
-  height: 40px; /* Ajuste a altura da logo conforme necessário para ser menor */
+  height: 30px; /* Ajuste a altura da logo para ser menor e responsiva */
   margin-right: 10px; /* Espaçamento à direita da logo */
 }
 
@@ -48,45 +49,55 @@ li:hover {
   display: block;
   text-align: center;
   margin: 0; /* Remove margens padrão */
-  padding: 250px; /* Você pode querer ajustar isso também em dispositivos móveis */
+  padding: 90px;
+  width: 90%;
+  height: 200px;
+ 
+
+  
   background-image : url("imagem/imagem_homem_celular.jpg");
+
+ 
   background-size: cover; /* Ajusta para cobrir todo o espaço */
   background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
 
 .meio .textmeio {
-  font-size:25px; /* Tamanho da fonte */
+  font-size: calc(19px + (25 - 16) * ((100vw - 320px) / (1600 - 320))); /* Tamanho responsivo da fonte */
   color: rgb(0, 0, 84); /* Cor do texto */
 }
 
 /* Estilos específicos para dispositivos móveis */
 
-/* configuração do botão principal */
-
 .paineldobt {
     text-align: center;
+    padding-top: 20px; /* Espaço superior para o botão em dispositivos móveis */
 }
 
 .botao {
+    cursor: pointer;
     background-color: white; /* Fundo branco */
     color: #333; /* Cor do texto */
     border: 2px solid #007BFF; /* Borda azul */
     border-radius: 5px; /* Bordas arredondadas */
-    padding:10px 20px; /* Espaçamento interno */
-    font-size:16px; /* Tamanho da fonte */
+    padding:5px 10px; /* Espaçamento interno */
+
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); /* Tamanho responsivo da fonte do botão */
+    width: calc(100% - 20px); /* Largura total menos margens laterais para dispositivos móveis */
+    max-width: 200px; /* Limita a largura máxima do botão em telas grandes */
+
+    transition: background-color .3s, color .3s; /* Transição suave para hover */
 }
 
 .botao:hover {
-    background-color:#007BFF; /* Cor de fundo ao passar o mouse */
+    background-color:#0056b3; /* Cor de fundo ao passar o mouse */
     color:white; /* Cor do texto ao passar o mouse */
 }
 
-/*botao fim */
-
 .mensagem {
-    background-image:url("");
-    background-size:cover; /* Ajusta para cobrir todo o espaço */
-    background-repeat:no-repeat; /* Evita a repetição da imagem */
+    background-image:url(""); 
+    background-size:cover; 
+    background-repeat:no-repeat;
     padding:180px;
     display:flex;
     text-align:right;
