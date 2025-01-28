@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(5, 125, 231);
+}
+
+nav {
+  border: 3px solid #393939; /* Borda escura */
+  background-color: #676767;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px; /* Diminui o espaçamento interno do nav */
+  height: auto; /* Permite que a altura se ajuste ao conteúdo */
+}
+
+.nav-content {
+  position: relative;
+  display: flex;
+  margin: 0;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+li {
+  color: #ffffff;
+  list-style-type: none;
+  margin: 0 15px;
+}
+
+li:hover {
+  color: blue;
+}
+
+.nav2 {
+  color: white;
+  font-size: medium; /* Mantenha o tamanho da fonte em um nível razoável */
+  border: 3px solid #676767; /* Borda azul escura */
+  background-color: #676767;
+  display: flex; /* Para alinhar a logo e o texto */
+  align-items: center; /* Alinha verticalmente os itens */
+  padding: 5px; /* Ajusta o espaçamento interno da nav2 */
+}
+
+.nav2 img {
+  height: 40px; /* Ajuste a altura da logo conforme necessário para ser menor */
+  margin-right: 10px; /* Espaçamento à direita da logo */
+}
+
+.meio {
+  display: block;
+  text-align: center;
+  margin: 0; /* Remove margens padrão */
+  padding: 250px; /* Você pode querer ajustar isso também em dispositivos móveis */
+  background-image : url("imagem/imagem_homem_celular.jpg");
+  background-size: cover; /* Ajusta para cobrir todo o espaço */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+.meio .textmeio {
+  font-size:25px; /* Tamanho da fonte */
+  color: rgb(0, 0, 84); /* Cor do texto */
+}
+
+/* Estilos específicos para dispositivos móveis */
+
+/* configuração do botão principal */
+
+.paineldobt {
+    text-align: center;
+}
+
+.botao {
+    background-color: white; /* Fundo branco */
+    color: #333; /* Cor do texto */
+    border: 2px solid #007BFF; /* Borda azul */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding:10px 20px; /* Espaçamento interno */
+    font-size:16px; /* Tamanho da fonte */
+}
+
+.botao:hover {
+    background-color:#007BFF; /* Cor de fundo ao passar o mouse */
+    color:white; /* Cor do texto ao passar o mouse */
+}
+
+/*botao fim */
+
+.mensagem {
+    background-image:url("");
+    background-size:cover; /* Ajusta para cobrir todo o espaço */
+    background-repeat:no-repeat; /* Evita a repetição da imagem */
+    padding:180px;
+    display:flex;
+    text-align:right;
+
+    color:rgb(218,218,218);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
